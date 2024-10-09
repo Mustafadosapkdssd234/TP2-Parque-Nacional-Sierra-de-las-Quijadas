@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #3fbb29d4;
+}
+
+html{
+    height: 100%;
+}
+
+.contenedor{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+header{
+    background-image: url(../assets/imagenes/Parque_Nacional__Sierra_de_las_Quijadas.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 1px 5px darkslategray;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    width: 100%;
+    height: 20%;
+}
+
+#menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    opacity: 0.3;
+    color: white;
+    height: 40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#bannermenu{
+    margin-left: 5%;
+}
+
+#bannermenu2{
+    margin-right: 5%;
+}
+
+#div-titulo{
+    margin-right: 40%;
+    margin-left: 40%;
+}
+
+header h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    text-shadow: 0 4px 8px black;
+    font-size: 21px;
+    box-shadow: 0 0 5px white;
+    
+}
+
+#grid-container{
+    display: grid;
+    
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        'titulo1 descripcion1'
+        'titulo2 descripcion2'
+        'titulo3 descripcion3';
+    width: 100%;
+    height: 100%;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+}
+
+.senderismo{
+    background-image: url(../assets/imagenes/Senderismo.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 8PX;
+    grid-area: titulo1;
+    filter: brightness(60%);
+    margin: 10%;
+    box-shadow: 0 1px 10px darkslategray;
+    transition: all 0.3s;
+}
+
+#titulo1{
+    text-align: center;
+    color: white;
+    padding: 3%;
+    text-shadow: 0px 4px 8px black;
+    font-family: sans-serif;
+    width: 100%;
+}
+
+#parrafo1{
+    padding: 4%;
+    align-items: center;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.senderismo:hover{
+    filter: brightness(100%);
+    transform: scale(5px);
+    box-shadow: 0 1px 15px;
+    transition: all 0.3s;
+}
+
+.parrafo{
+    grid-area: descripcion1;
+}
+
+.aves{
+    background-image: url(../assets/imagenes/aves.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 8PX;
+    grid-area: titulo2;
+    filter: brightness(60%);
+    margin: 10%;
+    box-shadow: 0 1px 10px darkslategray;
+    transition: all 0.3s;
+}
+
+#titulo2{
+    text-align: center;
+    color: white;
+    padding: 3%;
+    text-shadow: 0px 4px 8px black;
+    font-family: sans-serif;
+}
+
+#parrafo2{
+    padding: 4%;
+    align-items: center;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.aves:hover{
+    filter: brightness(100%);
+    transform: scale(5px);
+    box-shadow: 0 1px 15px;
+    transition: all 0.3s;
+}
+
+.parrafo2{
+    grid-area: descripcion2;
+}
+
+.miradores{
+    background-image: url(../assets/imagenes/miradores.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 8PX;
+    grid-area: titulo3;
+    filter: brightness(60%);
+    margin: 10%;
+    box-shadow: 0 1px 10px darkslategray;
+    transition: all 0.3s;
+}
+
+.parrafo3{
+    grid-area: descripcion3;
+}
+
+#titulo3{
+    text-align: center;
+    color: white;
+    padding: 3%;
+    text-shadow: 0px 4px 8px black;
+    font-family: sans-serif;
+}
+
+#parrafo3{
+    padding: 4%;
+    align-items: center;
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.miradores:hover{
+    filter: brightness(100%);
+    transform: scale(5px);
+    box-shadow: 0 1px 15px;
+    transition: all 0.3s;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+    .contenedor{
+        width: 100%;
+    }
+
+    #titulo1{
+        width: 100%;
+    }
+
+    #grid-container{
+    grid-template-columns:1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        'titulo1'
+        'descripcion1'
+        'titulo2'
+        'descripcion2'
+        'titulo3'
+        'descripcion3';
+    width: 100%;
+    margin: 0;
+    }
+
+    #div-titulo{
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+
+    header #menu{
+        margin: 0;
+    }
+}
+
+footer{
+    background-color: rgb(107, 107, 107);
+    height: 6%;
+    bottom: 0;
+}
+
+footer div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0;
+
+}
+
+#footer-twitter{
+    width: 50px;
+    height: 50px;
+}
+
+#footer-youtube{
+    width: 50px;
+    height: 40px;
+}
+
+#footer-instagram{
+    width: 50px;
+    height: 50px;
+}

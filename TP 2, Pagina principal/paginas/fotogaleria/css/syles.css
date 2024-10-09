@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #3fbb29d4;
+}
+
+.contenedor{
+    width: 100%;
+    display: none;
+}
+
+.principal{
+    background-image: url(../assets/imagenes/fondo\ galeria.jpg);
+    background-size: cover;
+    background-position: center center;
+    
+    background-color: black;
+    height: 20%;
+    box-shadow: 0 2px 10px;
+    border-radius: 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    opacity: 0.3;
+    color: white;
+    height: 40px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.banner{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 260px;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#bannermenu{
+    margin-left: 5%;
+}
+
+#bannermenu2{
+    margin-right: 5%;
+}
+
+.img{
+    height: 199px;
+    width: 250px;
+}
+
+#img{
+    height: 100%;
+    width: 100%;
+}
+
+.tecto{
+    color: white;
+    text-shadow: 0px 10px 10px black;
+    width: auto;
+}
+
+
+.main{
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carrusel{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.carruselimg{
+    max-width: 100%;
+    height: 100%;
+}
+
+.flechas{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 97%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+#carrusel1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#carrusel2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#carrusel3{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#carrusel4{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#carrusel5{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#carrusel1 img{
+    object-fit: contain;
+    width: auto;
+    height: 100%;
+    border-radius: 7px;
+}
+
+#carrusel2 img{
+    object-fit: contain;
+    width: auto;
+    height: 100%;
+    border-radius: 7px;
+}
+
+#carrusel3 img{
+    object-fit: contain;
+    width: auto;
+    height: 100%;
+    border-radius: 7px;
+}
+
+#carrusel4 img{
+    object-fit: contain;
+    width: auto;
+    height: 100%;
+    border-radius: 7px;
+}
+
+#carrusel5 img{
+    object-fit: contain;
+    width: auto;
+    height: 100%;
+    border-radius: 7px;
+}
+
+main i{
+    text-decoration: none;
+    color: #337e3d;
+}
+
+.vista-previa{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+section div div img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 95%;
+}
+
+section div div{
+    width: 7%;
+    height: 5%;
+    box-shadow: 0 0 5px darkslategray;
+}
+
+@media screen and (max-width: 900px){
+    .contenedor{
+        width: 100%;
+    }
+
+    .menu{
+        font-size: 9px;
+    }
+
+    .principal{
+        width: 100%;
+    }
+
+    .banner{
+        width: 100%;
+        height: 50%;
+    }
+
+    .img{
+        margin-top: 5%;
+        height: 30%;
+        width: 30%;
+    }
+
+    .tecto{
+        color: white;
+        text-shadow: 0px 10px 10px black;
+        width: auto;
+        font-size: 10px;
+    }
+    
+    .main{
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+    }
+
+
+}
